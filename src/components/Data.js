@@ -1,7 +1,7 @@
 const questions = [
     { 
         id : 1,
-        question: "In which year was Google founded?",
+        question: "In which year was Google founded  ?",
         answers : [
             {
                 text: "1995",
