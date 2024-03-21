@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-export default function Trivia({
+export default function Quiz({
   data,
   questionNumber,
   setQuestionNumber,
@@ -23,7 +23,7 @@ export default function Trivia({
   const handleClick = (a) => {
     setSelectedAnswer(a);
     setClassName("answer active");
-    delay(3000, () => {
+    delay(300, () => {
       setClassName(a.correct ? "answer correct" : "answer wrong");
       delay(2000, () => {
         if (a.correct) {
@@ -37,7 +37,7 @@ export default function Trivia({
   };
 
   return (
-    <div className="trivia">
+    <div className="quiz">
       <div className="question">{question?.question}</div>
       <div className="answers">
         {question?.answers.map((a) => (

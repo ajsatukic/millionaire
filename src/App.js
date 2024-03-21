@@ -2,7 +2,7 @@ import './App.css';
 
 import Start from "./components/Start";
 import Timer from "./components/Timer";
-import Trivia from "./components/Trivia";
+import Trivia from "./components/Quiz";
 
 import { useEffect, useMemo, useState } from "react";
 
